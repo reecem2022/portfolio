@@ -1,3 +1,7 @@
+html{
+  overflow-y: scroll;
+}
+
 #root{
   text-align: center;
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -8,8 +12,13 @@ body{
   margin: 0;
   padding: 0;
   background-color: rgb(130, 170, 173);
+
 }
 
+p{
+  color:white;
+  text-shadow: 2px 2px 4px black;
+}
 
 h1{
   color:white;
@@ -29,6 +38,8 @@ h2{
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px 0;
+
+  width: calc(100%-(100vw - 100%));
 }
 
 .profile-picture{
@@ -45,7 +56,7 @@ h2{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
+  gap: 10px;
   margin: 20px;
 }
 
@@ -61,7 +72,7 @@ h2{
 
 .project-video{
   width: 500px;
-  height: auto;
+  height: 300px;
   border-radius: 8px;
 }
 

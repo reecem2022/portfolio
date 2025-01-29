@@ -1,9 +1,8 @@
-import React from "react";
-import DATA from './projects.js'
+import React from 'react'
 
-const Container=()=>{
+const Container=({data})=>{
 
-    const projects = JSON.parse(DATA)
+    const projects = JSON.parse(data)
 
     const createProjectCards=()=>{
         return projects.map((project)=>(

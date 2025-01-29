@@ -1,21 +1,19 @@
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"
+import Home from "./Home"
+import CollegeProjects from './CollegeProjects'
+import PersonalProjects from './PersonalProjects'
 import './App.css'
-import Container from './components/Container'
-import pfp from './assets/profile-picture.png'
 
 const App=()=>{
   return(
-    <div className="App">
-      <div className="header-container">
-        <img src={pfp} className="profile-picture" />
-        <p style={{fontSize:"45px",fontWeight:"bold"}}>Mark Reece</p>
-        <p>CURRENTLY UNDER CONSTRUCTION</p>
-        <p>Software Engineer/Developer and Game Programmer</p>
-        <p>Majoring in Computer Science, Minoring in Artifical Intelligence and Cyber Security</p>
-      </div>
-      <h1></h1>
-      <Container />
-    </div>
+    <Router basename='/portfolio'>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/college-projects' element={<CollegeProjects />} />
+        <Route path='/personal-projects' element={<PersonalProjects />} />
+      </Routes>
+    </Router>
   )
 }
-
 export default App
