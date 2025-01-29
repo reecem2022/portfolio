@@ -12,7 +12,6 @@ const App=()=>{
         <p>Software Engineer/Developer and Game Programmer</p>
         <p>Majoring in Computer Science, Minoring in Artifical Intelligence and Cyber Security</p>
       </div>
-      
       <h1></h1>
       <Container />
     </div>
