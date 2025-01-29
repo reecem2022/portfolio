@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../App.css'
 const Container=({data})=>{
 
     const projects = JSON.parse(data)
