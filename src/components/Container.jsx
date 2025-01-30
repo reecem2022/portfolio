@@ -1,5 +1,4 @@
 import React from 'react'
-import '../App.css'
 const Container=({data})=>{
 
     const projects = JSON.parse(data)
@@ -13,7 +12,7 @@ const Container=({data})=>{
                     <source src={project.video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <button className="project-button" onClick={()=>(window.open(project.link, "_blank"))}>GitHub</button>
+                <button className="project-button" onClick={()=>(window.open(project.link, "_blank"))}>Link</button>
             </div>
         ))
     }
