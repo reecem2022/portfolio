@@ -1,8 +1,7 @@
 import React from 'react'
-const Container=({data})=>{
+import './Container.css'
 
-    const projects = JSON.parse(data)
-
+const Container=({projects})=>{
     const createProjectCards=()=>{
         return projects.map((project)=>(
             <div key={project.name} className="project-card">
@@ -10,7 +9,7 @@ const Container=({data})=>{
                 <h4>{project.used}</h4>
                 <h4>{project.description}</h4>
                 <video className="project-video" controls>
-                    <source src={project.video} type="video/mp4" />
+                    <source src={`${project.video}`} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 {project.link !== "disabled" && (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"
+import { HashRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./Home"
 import CollegeProjects from './CollegeProjects'
 import PersonalProjects from './PersonalProjects'
@@ -7,7 +7,7 @@ import './App.css'
 
 const App=()=>{
   return(
-    <Router basename='/portfolio'>
+    <Router>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/college-projects' element={<CollegeProjects />} />

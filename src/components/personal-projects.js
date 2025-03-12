@@ -1,5 +1,5 @@
-const PROJECT_DATA = JSON.stringify([
+const PROJECT_DATA =[
 
-]);
+];
 
 export default PROJECT_DATA;

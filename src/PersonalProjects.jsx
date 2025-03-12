@@ -1,13 +1,12 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
 import './App.css'
+import React from "react";
+import { useNavigate } from "react-router-dom"
 import data from './components/personal-projects.js'
-import Header from './components/Header'
-import Container from './components/Container'
+import Header from './components/Header.jsx'
+import Container from './components/Container.jsx'
 
 const PersonalProjects = () => {
     const navigate = useNavigate();
-
     return (
         <div className="App">
             <Header />
@@ -16,7 +15,7 @@ const PersonalProjects = () => {
                These projects range from software that fulfills a purpose, to video games that I'm working on.
             </p>
             <button onClick={()=>navigate("//")}>Go To Home Page</button>
-            <Container data={data}/> 
+            <Container projects={data}/> 
         </div>    
     )
 }

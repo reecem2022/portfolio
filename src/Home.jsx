@@ -8,9 +8,9 @@ const Home = () => {
     return (
         <div className="App">
             <Header />
-            <h1>See College Projects</h1>
+            <h1 className="options">See College Projects</h1>
             <button onClick={()=>navigate("/college-projects")}>Go To College Projects</button>
-            <h1>See Personal Projects</h1>
+            <h1 className="options">See Personal Projects</h1>
             <button onClick={()=>navigate("/personal-projects")}>Go To Personal Projects</button>
         </div>
     )
